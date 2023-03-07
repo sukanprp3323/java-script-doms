@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/student/Desktop/css/javascript%203.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head>
+    <center>
+    <body>
+
+<h2>Java script dom </h2>
+<p><i><b>this the 2nd type of js dom form</b> </i></p>
+
+<form id="frm1" action="file:///C:/action_page.php">
+  Your full name: <input type="text" name="fname"><br><br>
+  Your mother name: <input type="text" name="lname"><br><br>
+  <input type="submit">
+</form> 
+
+<br><br>
+<a href="file:///C:/Users/student/Desktop/css/js%20r%201%20.html">Next</a>
+
+<p id="demo"><br><br><br></p>
+
+<script>
+const x = document.forms["frm1"];
+let text = "";
+for (let i = 0; i < x.length ;i++) {
+  text += x.elements[i].value + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+</center>
+</body>
+</html>

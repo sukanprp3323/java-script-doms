@@ -1,0 +1,47 @@
+<!Doctype html>
+<html>
+    <head>
+        <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
+        </head>
+  
+        <body>
+        
+<h1>form with js dom</h1>
+     
+      
+        NAME: <input type="text" name="fname"> <br><br>
+        AGE:  <input type="text maxlength"="3" size="8"> <br><br>
+        DOB :<input type="date"> <br><br>
+        COURSE :<select>
+            <option> select </option>
+            <option> BCA </option>
+            <option> BBA </option>
+            <option> B.com </option>
+            </select> <br><br>
+            STATE:<select>
+                <option> select </option>
+                <option> GUJRAT </option>
+                <option> RAJSTHAN </option>
+                <option> UTTAR PRADESHH </option>
+              </select> <br><BR>
+            City:<select>
+              <option> select </option>
+              <option> JAMNAGAR </option>
+              <option> ahemdabad </option>
+              <option> MAHSENA </option>
+            </select> <br><BR>
+
+          Address:<form action="/action_page.php" method="post">
+              <input type="text" name="fname" required>
+              <input type="submit"font-size="50%" value="Submit">
+          
+        </form>
+        </html>
